@@ -48,8 +48,8 @@ function Post() {
                 )}
               </li>
               <li>
-                <Link  to={{ pathname: `/Comments/${post.id}` }}>
-                  <FaRegComment style={{color:'black'}} size="36px" />
+                <Link to={{ pathname: `/Comments/${post.id}` }}>
+                  <FaRegComment style={{ color: "black" }} size="36px" />
                 </Link>
               </li>
             </ul>

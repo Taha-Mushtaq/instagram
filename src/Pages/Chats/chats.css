@@ -1,17 +1,33 @@
-.chat_username{
+.chat_username {
     background-color: lightgray;
     display: flex;
     justify-content: center;
     font-weight: 700;
     height: 40px;
 }
-.chats_list{
+
+.chats_list {
     display: flex;
     flex-direction: row;
-    margin: 2px;
+    cursor: pointer;
 }
-.cchats_list p{
+
+/* .chats_list p{
     font-weight: 400;
     margin-left: 2px;
     margin-top: 4px;
+} */
+
+.chats_list div {
+    margin-left: 10px;
 }
+
+.search {
+    margin-left: 25px;
+}
+
+.userContainer {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
