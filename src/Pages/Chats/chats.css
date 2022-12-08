@@ -12,11 +12,7 @@
     cursor: pointer;
 }
 
-/* .chats_list p{
-    font-weight: 400;
-    margin-left: 2px;
-    margin-top: 4px;
-} */
+
 
 .chats_list div {
     margin-left: 10px;
@@ -30,4 +26,10 @@
     margin-left: 15px;
     margin-top: 15px;
 }
-
+.chat_link{
+    text-decoration: none;
+    color: black;
+}
+.last_message{
+    color: gray;
+}

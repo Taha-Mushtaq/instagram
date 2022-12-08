@@ -32,7 +32,7 @@ function Chats() {
       <div className="chat_username">
         <Link to="/">
           <Icon className="back_icon" path={mdiChevronLeft} size={1.3} />
-        </Link>
+        </Link  >
         {myProfile.username}
       </div>
       <form>
@@ -45,25 +45,26 @@ function Chats() {
       <div className="userContainer">
         {chatUserToShow &&
           chatUserToShow.map((user, index) => (
-            <span className="chats_list" key={index}>
-              <Avatar src={user.profile_picture} alt="profilepic" />
-              <div>
-                <span>{user.username}</span>
-                <p>
-                  {
-                    messagesData
-                      .filter(
-                        (message) =>
-                          (message.senderId === myProfile.id &&
-                            message.receiverId === user.id) ||
-                          (message.receiverId === myProfile.id &&
-                            message.senderId === user.id)
-                      )
-                      .at(-1).message
-                  }
-                </p>
-              </div>
-            </span>
+            <Link  className="chat_link" to={{pathname: `/message/${user.id}`}}><span className="chats_list" key={index}>
+            <Avatar src={user.profile_picture} alt="profilepic" />
+            <div>
+              <span>{user.username}</span>
+              <p className="last_message">
+                {
+                  messagesData
+                    .filter(
+                      (message) =>
+                        (message.senderId === myProfile.id &&
+                          message.receiverId === user.id) ||
+                        (message.receiverId === myProfile.id &&
+                          message.senderId === user.id)
+                    )
+                    .at(-1).message
+                }
+              </p>
+            </div>
+          </span></Link>
+            
           ))}
       </div>
     </div>
