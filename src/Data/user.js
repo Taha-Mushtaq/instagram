@@ -35,9 +35,5 @@ export const userData = [
     following: "12k",
     isVerified: "true",
   },
-  {
-    id: "007",
-    username: "TahaMushtaq",
-    profile_picture: "https://avatars.githubusercontent.com/u/71284345?v=4"
-  }
+  
 ];
