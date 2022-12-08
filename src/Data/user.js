@@ -21,7 +21,7 @@ export const userData = [
     postsNumber: "2",
     followers: "47K",
     following: "7",
-    isVerified: "true",
+    isVerified: "false",
   },
   {
     id: "3",
@@ -33,6 +33,6 @@ export const userData = [
     postsNumber: "1",
     followers: "102K",
     following: "12k",
-    isVerified: "false",
+    isVerified: "true",
   },
 ];

@@ -1,14 +1,23 @@
-export const comment=[
+export const commentsData=[
     {
         id:'1',
         postId:'1',
         userId:'1',
-        comments:'SHukriya'
+        comment:'SHukriya',
+        time: '23min'
     },
     {
         id:'2',
         postId:'1',
         userId:'2',
-        comments:'Great'
+        comment:'Great',
+        time: '1h'
+    },
+    {
+        id:'2',
+        postId:'2',
+        userId:'2',
+        comment:'Great',
+        time: '56min'
     }
 ]

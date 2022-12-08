@@ -1,0 +1,12 @@
+.comment_heading{
+    display: flex;
+    justify-content: center;
+}
+.comment{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+.comment strong{
+    margin: 0 5px 
+}
