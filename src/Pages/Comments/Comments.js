@@ -21,7 +21,8 @@ function Comments() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const newCommentId = Math.max(commentsData.map((item) => Number(item.id)));
+    const newCommentId =
+      Math.max(commentsData.map((item) => Number(item.id))) + 1;
     const obj = {
       id: newCommentId,
       postId,
