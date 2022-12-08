@@ -20,7 +20,7 @@ function Chats() {
         <input placeholder="Search" />
       </form>
       {userData.map((user,index) => (
-        <span className="chats" key={index}>
+        <span className="chats_list" key={index}>
           <Avatar src={user.profile_picture} alt="profilepic" />
           <p>{user.username}</p>
         </span>
