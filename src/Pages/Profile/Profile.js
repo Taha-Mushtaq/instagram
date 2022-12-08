@@ -8,6 +8,7 @@ import Icon from "@mdi/react";
 import "./profile.css";
 import { ImageList, ImageListItem } from "@mui/material";
 
+
 function Profile() {
   const [userProfile, setUserProfile] = useState("");
   const [userPost, setUserPost] = useState("");

@@ -1,0 +1,7 @@
+.chat_username{
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    height: 40px;
+}

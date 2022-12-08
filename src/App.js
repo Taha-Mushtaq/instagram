@@ -16,7 +16,7 @@ function App() {
         <Route path='/Profile/:userId' element={<Profile/>}/>
         <Route path='/Message/:userId' element={<Message/>}/>
         <Route path='/Comments/:postId' element={<Comments/>}/>
-        <Route path='/Chats/' element={<Chats/>}/>
+        <Route path='/Chats' element={<Chats/>}/>
       </Routes>
     </div>
   );
