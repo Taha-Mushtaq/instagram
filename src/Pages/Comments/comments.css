@@ -10,3 +10,10 @@
 .comment strong{
     margin: 0 5px 
 }
+.comment_post{
+    display: flex;
+    flex-direction: row;
+}
+.post_avatar{
+    margin: 4px;
+}

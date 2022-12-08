@@ -6,6 +6,7 @@ import './comments.css'
 import Avatar from "@mui/material/Avatar";
 import {userData} from '../../Data/user'
 import {commentsData} from '../../Data/comments'
+import { myProfile } from "../../Data/profile";
 
 
 function Comments() {
@@ -35,8 +36,9 @@ function Comments() {
         </div>
       </div>)
       }
-      <form>
-        <input value={comment} onChange={(e)=>setComment(e.target.value)}/>
+      <form className="comment_post">
+        <Avatar className="post_avatar" src={myProfile.profile_picture}/>
+        <input placeholder="Add a comment" value={comment} onChange={(e)=>setComment(e.target.value)}/>
       </form>
     </div>
   );
