@@ -7,7 +7,19 @@ import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { FaRegComment } from "react-icons/fa";
 
 function Post() {
-  const [changeHeartIcon, setChangeHeartIcon] = React.useState(false);
+  const [activeHeartId, setActiveHeartId] = React.useState([]); // Collection of IDs which are active
+
+  const addActiveHeartId = (postId) => {
+    setActiveHeartId([...activeHeartId, postId]);
+  };
+
+  const removeActiveHeartId = (postId) => {
+    setActiveHeartId(
+      activeHeartId.filter(function (item) {
+        return item !== postId;
+      })
+    );
+  };
 
   return (
     <div>
@@ -32,18 +44,18 @@ function Post() {
             <strong>{post.username}</strong> {post.postCaption}
             <ul className="list-unstyled d-flex">
               <li className="icons">
-                {!changeHeartIcon && (
+                {!activeHeartId.includes(post.id) && (
                   <AiOutlineHeart
                     size="38px"
-                    onClick={() => setChangeHeartIcon(!changeHeartIcon)}
+                    onClick={() => addActiveHeartId(post.id)}
                   />
                 )}
 
-                {changeHeartIcon && (
+                {activeHeartId.includes(post.id) && (
                   <AiFillHeart
                     size="38px"
                     style={{ color: "red" }}
-                    onClick={() => setChangeHeartIcon(!changeHeartIcon)}
+                    onClick={() => removeActiveHeartId(post.id)}
                   />
                 )}
               </li>
