@@ -1,19 +1,36 @@
-.comment_heading{
+.comment_heading {
     display: flex;
     justify-content: center;
 }
-.comment{
+
+.comment {
     display: flex;
     flex-direction: row;
     margin: 10px;
 }
-.comment strong{
-    margin: 0 5px 
+
+.comment strong {
+    margin: 0 5px
 }
-.comment_post{
+
+.comment_post {
     display: flex;
     flex-direction: row;
 }
-.post_avatar{
+
+.post_avatar {
     margin: 4px;
+}
+
+.post_button {
+    color: blue;
+    border: 0.5px solid black;
+    border-left: 0px;
+    background-color: white;
+
+}
+
+.comment_input {
+    border-right: 0px !important;
+
 }
