@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.heading_title{
+    font-size: 26px;
+    font-weight: bold;
+}
+.heading_icon{
+    margin-top: 10px;
+}

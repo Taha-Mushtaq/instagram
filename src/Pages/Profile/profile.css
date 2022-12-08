@@ -1,0 +1,28 @@
+.user_name {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.back_icon {
+    position: absolute;
+    left: 0;
+}
+
+.profile_stats {
+    display: flex;
+    flex-direction: row;
+    padding-inline: 18;
+}
+
+.user_des {
+    margin: 0;
+    color: grey;
+    font-size: 14px;
+}
+
+.profile_bio {
+    width: 60%;
+}
+
